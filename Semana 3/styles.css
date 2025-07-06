@@ -1,0 +1,28 @@
+/* Cambiar color del botón principal */
+.btn-primary {
+  background-color: #ff5733;
+  border-color: #ff5733;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover con animación */
+.btn-primary:hover {
+  background-color: #e14c2a;
+  transform: scale(1.1);
+}
+
+/* Sombra y borde redondeado en imágenes */
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Cambios para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    background-color: #fceae0;
+  }
+  h3 {
+    color: #ff5733;
+  }
+}

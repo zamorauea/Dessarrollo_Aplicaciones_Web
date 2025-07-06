@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto – Servicool ZaSa</title>
+
+  <!-- 🔗 Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Formulario de Contacto – Servicool ZaSa</h2>
+  <p>Solicita servicios de instalación, reparación o mantenimiento de aire acondicionado.</p>
+
+  <form id="registroForm">
+    <label>
+      Nombre completo:
+      <input type="text" id="nombre" required>
+      <span class="error" id="errorNombre"></span>
+    </label>
+
+    <label>
+      Correo Electrónico:
+      <input type="email" id="correo" required>
+      <span class="error" id="errorCorreo"></span>
+    </label>
+
+    <label>
+      Contraseña de acceso (para seguimiento):
+      <input type="password" id="password" required>
+      <span class="error" id="errorPassword"></span>
+    </label>
+
+    <label>
+      Confirmar Contraseña:
+      <input type="password" id="confirmPassword" required>
+      <span class="error" id="errorConfirmPassword"></span>
+    </label>
+
+    <label>
+      Edad:
+      <input type="number" id="edad" required>
+      <span class="error" id="errorEdad"></span>
+    </label>
+
+    <label>
+      Tipo de servicio:
+      <select id="servicio" required>
+        <option value="">Seleccione un servicio</option>
+        <option value="instalacion">Instalación</option>
+        <option value="mantenimiento">Mantenimiento</option>
+        <option value="reparacion">Reparación</option>
+        <option value="repuestos">Compra de Repuestos</option>
+      </select>
+    </label>
+
+    <div class="buttons">
+      <button type="submit" id="enviar" disabled>Enviar Solicitud</button>
+      <button type="reset">Reiniciar</button>
+    </div>
+  </form>
+
+  <!-- 📜 Enlace al archivo de JavaScript con las validaciones dinámicas -->
+  <script src="script.js"></script>
+</body>
+</html>
