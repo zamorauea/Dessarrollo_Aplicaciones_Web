@@ -1,0 +1,37 @@
+/* Estilo para botón primario personalizado */
+.btn-primary {
+  background-color: #ff5733;
+  border-color: #ff5733;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e04b28;
+  transform: scale(1.05);
+}
+
+/* Cards con efecto al pasar el mouse */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Media query personalizada para pantallas pequeñas */
+@media (max-width: 576px) {
+  body {
+    background-color: #f4f4f4;
+  }
+
+  header h1 {
+    color: #ff5733;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
