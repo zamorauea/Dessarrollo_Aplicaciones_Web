@@ -1,0 +1,12 @@
+body {
+  background-color: #f5faff;
+}
+
+h2 {
+  color: #004b8d;
+}
+
+.btn-warning {
+  border-radius: 20px;
+  font-weight: bold;
+}

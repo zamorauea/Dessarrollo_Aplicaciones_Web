@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicool Zasa | Aires Acondicionados</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Servicool Zasa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CARRUSEL DE IMÁGENES -->
+  <div id="carruselServicios" class="carousel slide container my-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="VENTA_AIRE.png" class="d-block w-100" alt="Venta de equipos">
+      </div>
+      <div class="carousel-item">
+        <img src="INSTALACIÓN_AIRE.png" class="d-block w-90" alt="instalación de aire">
+      </div>
+      <div class="carousel-item">
+        <img src="MANTENIMIENTO_AIRE.png" class="d-block w-100" alt="Mantenimiento de aire">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselServicios" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselServicios" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- TABLA DE SERVICIOS Y PRODUCTOS -->
+  <section id="productos" class="container mb-5">
+    <h2 class="text-center text-primary">Nuestros Servicios y Productos</h2>
+    <table class="table table-striped table-hover mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th>Servicio / Producto</th>
+          <th>Precio Aproximado</th>
+          <th>Disponibilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Instalación A/C 12k BTU</td><td>$50.00</td><td>Disponible</td></tr>
+        <tr><td>Mantenimiento Preventivo</td><td>$40.00</td><td>Disponible</td></tr>
+        <tr><td>Venta A/C 18k BTU</td><td>$450.00</td><td>Disponible</td></tr>
+        <tr><td>Repuestos y Accesorios</td><td>Desde $10.00</td><td>Consultar</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="contacto" class="container mb-5">
+    <h2 class="text-center text-primary">Contáctanos</h2>
+    <form id="contactForm" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Ingresa un correo válido.</div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Mensaje:</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+        <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- BOTÓN DE ALERTA -->
+  <div class="container text-center mb-5">
+    <button class="btn btn-warning" onclick="mostrarAlerta()">Solicita una Cotización</button>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Servicool Za-Sa - Aires Acondicionados<br>
+    📧 servicool.zasa@gmail.com | 📱 0996173679 | 🌐 Facebook: Servi-Cool Za-Sa</p>
+  </footer>
+
+  <!-- Scripts Bootstrap + JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
